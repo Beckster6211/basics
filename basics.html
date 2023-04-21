@@ -1,0 +1,227 @@
+<!Doctype html> <!-- ensure the most current html -->
+<html> <!--tells browser html structure -->
+    <head>
+        <!--browser information in the head -->
+        <title>Basics</title> <!-- changes tab name on browser -->
+    </head>
+    <body> <!-- core html -->
+       <!--<div>
+            <header>
+                <p>Header tag usually contains a nav bar</p>
+            </header>
+            <nav>
+                <ul>
+                    <li>nav</li>
+                </ul>
+            </nav>
+        </div>
+        <main>main tags can be used, they are sometimes helpful for screen readers</main>
+        <div>
+            <h1>h1 heading h1 tag</h1>
+            <h2>h2 heading h2 tag</h2>
+            <h3>h3 heading h3 tag</h3>
+            <h4>h4 heading h4 tag</h4>
+            <h5>h5 heading h5 tag</h5>
+            <h6>h6 heading h6 tag</h6>
+        </div>
+        <div>
+            <p>This is a paragraph tag p tag</p>
+        </div>
+        <div>
+            <h1 id = "h1HeadingId">h1 with an id attribute (id = "h1HeadingWithId")</h1>
+        </div>
+        <div>
+            <p>This is to <em>emphasize</em> text with em tag</p>
+            <p>This is to make text <strong>bold</strong> with a strong tag</p>
+        </div>
+        <div>
+            <p>This is to demonstrate <br> line breaks that separte text <br> onto different lines br tag can also use hr tag for horizontal line break</p>
+        </div>
+        <div>
+            <p>This is an unordered list with ul tag, unordered list shows list items as bullet points</p>
+            <ul>
+                <li>This is list item one li tag</li>
+                <li>List item 2 with li tag</li>
+                <li>List item 3 with li tag</li>
+            </ul>
+            <p>This is an ordered list with ol tag, ordered list shows items as numbered</p>
+            <ol>
+                <li>This is the first item in list li tag</li>
+                <li>this is the second item in list li tag</li>
+                <li>This is third item in list li tag</li>
+            </ol>
+        </div>
+        <div>
+            <p>This is an picture with source and alt attribute, img self closing tag with src and alt = "a  html 5 logo"</p>
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCI1yTWEJhL2OoD4f-5JxhUcxPA-AVikenrA&usqp=CAU" alt = "a html 5 logo"/>
+        </div>
+        <div>
+            <p>This is a video with source, width, height and controls attribute, with text video not supported between tags, video tag with src, width, height, autoplay (starts on its own), loop (repeats) and controls</p>
+            <video src = "https://content.codecademy.com/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" width = "300px" height = "300px" controls>Video not supported</video>
+        </div>
+        <div>
+            <p>This is link to other websites, with href attributes and target ="_blank" for opening link in new window, add text in the middle, a tag </p>
+            <a href = "https://en.wikipedia.org/wiki/Brown_bear" target = "_blank">Link to a website</a>
+            <br>
+            <p>This is link to other parts of the same website, with href attributes, add text in the middle, a tag </p>
+            <a href = "./basics.html">Link to somewhere on the same page</a>
+            <br>
+            <p>This is link to other websites via a picture, with href attributes and target ="_blank" for opening link in new window, add image in the middle, a tag </p>
+            <a href="https://www.codecademy.com/learn" target="_blank"><img src="https://images.codecademy.com/social/logo-codecademy-social.png" alt="Brown bear" width = "400" height = "300"/></a>
+            <br>
+            <p>This link will take you t the  top of the page via an id and matching href</p>
+            <a href = "#h1HeadingId">Goes to h1 tag with id h1HeadingId with # before in href</a>
+        </div>
+        <div> --> 
+            <!--This is how to comment out-->
+        <!-- </div>
+        <div>
+            <p>This is creating a table, begin with table tag, thead for table head, tbody for table body, th tag for table headings, tr tag for table row, td tag for table data, tfoot for table footer. th - table headings have scope attribute of col(across) and row(down). table has attribute of border(border can also be achieved through css). attribute can also be colspan and/or rowspan to make it over multiple</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope = "col">Company Name</th>
+                        <th scope = "col">Number of Items to Ship</th>
+                        <th scope = "col">Next Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Adam's Greenworks</td>
+                    <td>14</td>
+                    <td colspan = "2">Package Items</td>
+                </tr>
+                <tr>
+                    <td>Davie's Burgers</td>
+                    <td>2</td>
+                    <td>Send Invoice</td>
+                  </tr>
+                  <tr>
+                    <td>Baker's Bike Shop</td>
+                    <td>3</td>
+                    <td>Send Invoice</td>
+                  </tr>
+                  <tr>
+                    <td>Miss Sally's Southern</td>
+                    <td>4</td>
+                    <td>Ship</td>
+                  </tr>
+                  <tr>
+                    <td>Summit Resort Rentals</td>
+                    <td>4</td>
+                    <td>Ship</td>
+                  </tr>
+                  <tr>
+                    <td>Strike Fitness</td>
+                    <td>1</td>
+                    <td>Enter Order</td>
+                  </tr>
+                  <tfoot>
+                      <td>Total</td>
+                      <td>28</td>
+                  </tfoot>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <p>This is for how to do a form, form tag. form has attributes action (determines where the information is sent) and method(assigned a HTTP verb that is included in the HTTP request)</p>
+            <form action = "/practice.html" method = "POST">
+                <h1>Davies burgers</h1>
+                <p>Menu items</p>
+                <p>Input field  input tag has self closing, has attribute type (text, password-changes to *stars or .dots) number(and special characters, step attribute for up down arrows with number for how many arrows moves it), range(creates a slider with min and max values, still needs step attribute), checkbox(value attribute needed), radio(like checkbox but round and can only select certain amount), name, value(enables something to be in the field as placeholder) input field have labels, label tags, label tags have attribute for, for attributes matches id of input </p>
+                <label for = "username">Username</label>
+                <input type = "text" name = "username" id = "username"/>
+                <br>
+                <label for = "password">Password</label>
+                <input id = "password" type = "password" name = "password"/>
+                <br>
+                <br>
+                <label for = "amount">How many?</label>
+                <input id = "amount" type = "number" step = "1" name = "amount"/>
+                <br>
+                <label for = "cookness">How cooked?</label>
+                <input id="cookness" type = "range" name = "cookness" step = "1" min = "0" max = "50"/>
+                <br>
+                <p class = "toppings">Toppings</p>
+                <label for = "lettuce">Lettuce</label>
+                <input id = "lettuce" name = "topping" type = "checkbox" value = "lettuce"/>
+                <label for = "tomato">Tomato</label>
+                <input id="tomato" name = "topping" type="checkbox" value = "tomato"/>
+                <label for = "mushrooms">Mushrooms</label>
+                <input id = "mushrooms" name = "topping" type = "checkbox" value = "mushrooms"/>
+                <label for = "gherkins">Gherkins</label>
+                <input id="gherkins" name = "topping" type ="checkbox" value = "gherkins"/>
+                <br>
+                <label for = "yes">Cheese Yes</label>
+                <input id = "yes" name = "cheese" type ="radio" value = "yes"/>
+                <label for = "no"> Cheese No</label>
+                <input id = "no" name = "cheese" type = "radio" value = "no"/>
+                <p>Drop down list needs select tag with option tags, option with value attribute, id needs to match for</p>
+                <label for = "bun">Bun type</label>
+                <select id = "bun" name = "bun">
+                    <option value = "sesame">Sesame</option>
+                    <option value = "potato">Potato</option>
+                    <option value = "doughnut">Doughnut</option>
+                </select>
+                <p>datalist is an input field with options that the user can narrow down by typing into it and limiting the options. input field with list as an attribute, datalist tag with option tag</p>
+                <label for = "sauce">Sauces</label>
+                <input list = "sauces" id= "sauce" name = "sauces"/>
+                <datalist id="sauces">
+                    <option value = "ketchup">Ketchup</option>
+                    <option value ="mayo">Mayo</option>
+                    <option value = "bbq">BBQ</option>
+                </datalist>
+                <p>Textarea for an input field that can expand in order to expand attribute rows and cols</p>
+                <label for = "extra">Anything else?</label>
+                <textarea id = "extra" name = "extra" rows ="3" cols="40">Anything else?</textarea>
+                <p>input field with type attribute with submit and value attribute with "what want to appear in button" </p>
+                <input type = "submit" value = "Submit"/>
+                <p>on an input can add required attribute meaning that fieldd has to be completed (usually shown by having a star)</p>
+                <p>range on an input with number attribute type and setting a min, may get warning if try to go under</p>
+                <label for = "guess">Guess</label>
+                <input id = "guess" name = "guess" type = "number" min = "1" max = "10"/>
+                <p>minlength and maxlength used as attributes when restricting text amount pattern attribute means needs special characters (if pattern [0-9] {14,16} means needs to be numbers and between 14 to 16 characters)</p>
+                <input type = "text" name = "name" minlength = "3" maxlength = "10" pattern = "[a-zA-Z0-9]+"/> means no special characters
+            </form>
+        </div>
+        <div>
+        <section>
+            <p>section tags can be sued to separate things such as chapters, headings</p>
+            <article>
+                <p>Sometimes article tags are found inside section tags they are good for screen readers to know when parts are related</p>
+                <aside><p>aside tags can be used to show quotes</p></aside>
+            </article>
+        </section>
+        </div>
+        <div>
+            <p>figure and figcaption tags are used to add text to a picture underneath it</p>
+            <figure>
+                <img src = "https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg"/>
+                <figcaption>Picture of a cute doggy</figcaption>
+            </figure>
+        </div>
+        <div>
+            <p>Audio tag has a source self closing tag inside also has a type attribute also src, controls, autoplay</p>
+            <audio controls> 
+                <source src = "https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type = "audio/mp3"/>
+            </audio>
+        </div>
+        <footer>
+            <p>footer tag can be used</p>
+        </footer> -->
+        <!-- <script src = "basics.js"></script> -->
+        <!-- <script src = "conditionals.js"></script> -->
+        <!-- <script src = "functions.js"></script> -->
+        <!-- <script src = "arrays.js"></script> -->
+        <!-- <script src = "loops.js"></script> -->
+        <!-- <script src = "higherFunctions.js"></script> -->
+        <!-- <script src = "objects.js"></script> -->
+        <!-- <script src = "oop.js"></script> -->
+        <!-- <script src = "modules.js"></script> -->
+        <!-- <script src = "promises.js"></script> -->
+        <!-- <script src = "async+await.js"></script> -->
+        <!-- <script src = "request.js"></script> -->
+        <script src = "fetch.js"></script>
+    </body>
+    </body>
+</html>
